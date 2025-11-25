@@ -1,132 +1,104 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Maycon Barboza — Psicólogo & Psicanalista</title>
 
-<!-- Meta para preview em WhatsApp/Facebook: substitua USERNAME e REPO pelo seu -->
 <meta property="og:title" content="Maycon Barboza — Psicólogo & Psicanalista">
-<meta property="og:description" content="Atendimento clínico, formação em Psicanálise e escuta reflexiva.">
-<!-- Substitua abaixo pela URL final antes de compartilhar: ex: https://mayconbarboza.github.io/maycon-1.jpg -->
-<meta property="og:image" content="https://USERNAME.github.io/REPO/maycon-1.jpg">
-<meta property="og:url" content="https://USERNAME.github.io/REPO/">
+<meta property="og:description" content="Formação em Psicanálise • Psicoterapia • Supervisão clínica">
+<meta property="og:image" content="maycon-1.jpg">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 
 <style>
 :root{
---bg:#FBF6F3;
---card:#fffdfa;
---accent:#8B5E3C; /* azul petroleo */
---accent-2:#F7ECE5;
---muted:#6B645E;
---text:#1E1916;
---radius:14px;
---maxw:980px;
+--bg:#FBF6F3; --card:#ffffff; --accent:#7c5a46; --muted:#6b6460; --text:#222; --radius:14px; --maxw:980px;
 }
 *{box-sizing:border-box}
-body{
-margin:0;
-font-family: "Inter", Georgia, serif;
-background:linear-gradient(180deg,#fffaf8 0%,var(--bg) 100%);
-color:var(--text);
--webkit-font-smoothing:antialiased;
-line-height:1.5;
-}
-.wrap{max-width:var(--maxw);margin:28px auto;padding:20px}
-.card{background:var(--card);border-radius:var(--radius);padding:24px;box-shadow:0 18px 40px rgba(20,18,16,0.06)}
-/* Hero: foto + intro */
-.hero{display:flex;gap:20px;align-items:center}
-.hero-left{flex:0 0 200px}
-.avatar{
-width:200px;height:200px;border-radius:12px;object-fit:cover;border:8px solid rgba(139,94,60,0.06);
-box-shadow:0 10px 30px rgba(20,18,16,0.06);
-}
+body{margin:0;font-family:Inter, Georgia, serif;background:linear-gradient(180deg,#fffaf8 0%,var(--bg)100%);color:var(--text);-webkit-font-smoothing:antialiased;}
+.wrap{max-width:var(--maxw);margin:34px auto;padding:20px}
+.card{background:var(--card);border-radius:var(--radius);padding:26px;box-shadow:0 20px 40px rgba(18,18,20,0.06)}
+
+/* HERO */
+.hero{display:flex;gap:24px;align-items:center}
+.hero-left{flex:0 0 220px}
+.avatar{width:220px;height:220px;border-radius:16px;object-fit:cover;border:6px solid rgba(124,90,70,0.06);box-shadow:0 12px 30px rgba(20,18,16,0.06)}
 .hero-right{flex:1}
-h1{margin:0;font-family:Georgia,serif;font-size:30px;letter-spacing:0.2px}
+h1{margin:0;font-family:Georgia,serif;font-size:30px;line-height:1.04}
 .subtitle{color:var(--muted);margin-top:6px;font-size:15px}
-.lead{margin:12px 0 0;color:var(--text);font-size:16px;max-width:720px}
-/* CTA principal */
+.lead{margin-top:12px;font-size:16px;color:#333;max-width:720px}
+
+/* CTA row */
 .cta-row{margin-top:16px;display:flex;gap:12px;align-items:center}
-.cta{
-background:var(--accent);color:#fff;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:700;
-box-shadow:0 10px 24px rgba(139,94,60,0.12);
-}
-.cta-ghost{background:transparent;border:1px solid rgba(30,30,30,0.06);padding:10px 14px;border-radius:12px;color:var(--muted)}
-/* Info boxes */
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
-.box{background:var(--accent-2);padding:14px;border-radius:10px;color:var(--muted);font-size:14px}
-/* fotos menores */
-.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
-.photos img{width:100%;height:140px;object-fit:cover;border-radius:10px;border:1px solid rgba(10,10,10,0.03)}
-/* notice */
-.notice{margin-top:18px;text-align:left;background:#fff6f2;padding:14px;border-radius:12px;color:var(--accent);border-left:4px solid rgba(139,94,60,0.18)}
+.cta{background:var(--accent);color:#fff;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:700;box-shadow:0 10px 24px rgba(124,90,70,0.12)}
+.cta-ghost{background:transparent;border:1px solid rgba(30,30,30,0.06);padding:10px 14px;border-radius:12px;color:var(--muted);text-decoration:none}
+
+/* Photos */
+.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.photos img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;box-shadow:0 8px 18px rgba(12,12,14,0.03)}
+
+/* Notice */
+.notice{margin-top:18px;text-align:left;background:rgba(247,236,230,0.95);padding:14px;border-radius:12px;color:var(--accent);border-left:4px solid rgba(124,90,70,0.18)}
 footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
 
-/* Watson small trigger (mobile) */
-.iara-trigger{
-display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;background:#2b6cb0;color:#fff;font-weight:700;border:none;
-box-shadow:0 10px 20px rgba(43,108,176,0.14);cursor:pointer;text-decoration:none;
-}
-
+/* responsive */
 @media(max-width:900px){
 .hero{flex-direction:column;align-items:flex-start}
 .hero-left{width:100%}
-.avatar{width:140px;height:140px}
+.avatar{width:160px;height:160px}
 .photos{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:480px){
 h1{font-size:22px}
-.photos img{height:120px}
+.photos img{aspect-ratio:1.2/1;height:120px}
 }
 
-/* Small tweak to ensure Watson widget fits nicely when present */
-#iara-container { max-width:420px; }
+/* BOTÃO YARA (flutuante) */
+.yara-btn{
+position:fixed; right:18px; bottom:18px; z-index:9998;
+display:flex; align-items:center; gap:10px;
+background:#1f6fb4; color:#fff; padding:12px 14px; border-radius:14px; font-weight:700;
+box-shadow:0 12px 30px rgba(31,111,180,0.18); border:none; cursor:pointer;
+}
+.yara-badge{width:36px;height:36px;border-radius:10px;background:#fff;display:flex;align-items:center;justify-content:center;color:#1f6fb4;font-weight:800}
+#yara-container{position:fixed;right:18px;bottom:80px;z-index:9999;display:none;max-width:420px}
 </style>
 </head>
 <body>
 <div class="wrap">
 <div class="card" role="main">
-<div class="hero">
-<div class="hero-left" aria-hidden="false">
-<!-- Substitua a imagem se necessário -->
+<div class="hero" aria-hidden="false">
+<div class="hero-left">
 <img class="avatar" src="maycon-1.jpg" alt="Maycon Barboza">
 </div>
 
 <div class="hero-right">
 <h1>Maycon Barboza — Psicólogo & Psicanalista</h1>
-<div class="subtitle">Formação livre em Psicanálise • Psicoterapia • Hipnoterapia</div>
-
-<p class="lead">
-Atendo questões de vínculos, repetição afetiva, transtornos de humor e sexualidade.
-Trabalho a partir da psicanálise com abertura para técnicas integrativas quando necessário.
-</p>
+<div class="subtitle">Formação livre em Psicanálise • Supervisão clínica • Hipnoterapia</div>
+<p class="lead">Atuação com vínculos, transtornos de humor, sexualidade e formação em psicanálise. Atendimento clínico desde 2016.</p>
 
 <div class="cta-row">
-<!-- botão principal: abre modal que carrega Yara (Watson) -->
-<a id="openChat" class="cta" href="#" role="button" aria-label="Conversar com Iara">Conversar com Yara</a>
-
-<!-- trigger alternativo pequeno (p.ex.: agendamento) -->
-<a class="cta-ghost" href="privacy.html" role="link">Privacidade</a>
+<a id="openChat" class="cta" href="#" aria-label="Conversar com a assistente Yara">Conversar com Yara</a>
+<a class="cta-ghost" href="privacy.html">Política de privacidade</a>
 </div>
 
-<div style="margin-top:10px;color:var(--muted);font-size:14px">CRP 01/21617 · Atendimento desde 2016</div>
+<div style="margin-top:8px;color:var(--muted);font-size:14px">CRP 01/21617 · Mais de 14.000 atendimentos</div>
 </div>
 </div>
 
-<div class="grid">
+<div style="margin-top:18px" class="grid">
 <div class="box">
-<strong>Formação & curso</strong>
-<p style="margin:8px 0 0">Formação livre em Psicanálise Clínica — 39 meses. Tripé: análise pessoal, supervisão e estudo teórico.</p>
+<strong>Formação — destaque</strong>
+<p>Formação Livre em Psicanálise Clínica — 39 meses. Tripé: análise pessoal, supervisão e estudo teórico. Método interativo aplicado à clínica.</p>
 </div>
 <div class="box">
-<strong>Atuação</strong>
-<p style="margin:8px 0 0">Psicoterapia, psicanálise, hipnoterapia, supervisão clínica, palestras e formação.</p>
+<strong>Atuação & serviços</strong>
+<p>Psicoterapia, psicanálise, hipnoterapia, supervisão, palestras e cursos. Trabalho com foco em autoconhecimento e simbolização do sofrimento.</p>
 </div>
 </div>
 
-<div class="section" style="margin-top:16px">
+<div style="margin-top:16px">
 <strong>Imagens</strong>
 <div class="photos">
 <img src="maycon-1.jpg" alt="Maycon 1">
@@ -135,66 +107,52 @@ Trabalho a partir da psicanálise com abertura para técnicas integrativas quand
 </div>
 </div>
 
-<div class="section" style="margin-top:16px">
+<div style="margin-top:16px">
 <strong>E-book da formação</strong>
 <p style="margin:6px 0;color:var(--muted)">Baixe o material da formação em psicanálise clínica.</p>
 
-<!-- === LINK PARA O PDF QUE VOCÊ ENVIOU (path local conforme seu upload) === -->
-<!-- O arquivo: /mnt/data/Ebook - Formação em Psicanálise Clinica.pdf -->
-<!-- No GitHub você deve subir com o nome desejado; se manter este caminho local, mantenha esse href -->
-<a href="/mnt/data/Ebook - Formação em Psicanálise Clinica.pdf" target="_blank" rel="noopener noreferrer" class="cta-ghost">Baixar e-book (PDF)</a>
-<!-- Se você subir o PDF para o repo com nome limpo, substitua o href por "ebook-formacao-psicanalise.pdf" -->
+<!-- LINK direto para o arquivo que você enviou -->
+<a class="cta-ghost" href="/mnt/data/Ebook - Formação em Psicanálise Clinica.pdf" target="_blank" rel="noopener noreferrer">Baixar e-book (PDF)</a>
 </div>
 
 <div class="notice">
-<strong>Aviso:</strong> Este site apresenta informações sobre serviços clínicos. Não substitui avaliação profissional. Em caso de risco, procure ajuda imediata (CVV 188 – Brasil).
+<strong>Aviso:</strong> Conteúdo informativo. Yara é assistente de apoio — não substitui avaliação clínica. Em caso de risco, ligue 188 (CVV).
 </div>
 
-<footer>
-Curadoria e linguagem por Maycon Barboza — Conteúdo informativo.
-</footer>
+<footer>Curadoria e linguagem por Maycon Barboza</footer>
 </div>
 </div>
 
-<!-- Modal simples antes de abrir a Yara -->
-<div id="modal-iara" style="display:none;position:fixed;inset:0;background:rgba(6,6,6,0.45);align-items:center;justify-content:center;z-index:9998">
-<div style="background:white;padding:18px;border-radius:12px;max-width:420px;margin:auto;">
-<p style="margin:0 0 12px"><strong>Você será direcionado à Yara — assistente de apoio.</strong></p>
-<p style="margin:0 0 12px;color:var(--muted)">Yara oferece informações informativas e psicoeducativas. Não substitui terapia.</p>
-<div style="text-align:right">
-<button id="cancel-iara" style="margin-right:8px;padding:8px 12px;border-radius:8px;background:#eee;border:none;cursor:pointer;">Cancelar</button>
-<button id="confirm-yara" style="padding:8px 12px;border-radius:8px;background:var(--accent);color:#fff;border:none;cursor:pointer;">Continuar</button>
-</div>
-</div>
-</div>
+<!-- BOTÃO FIXO: conversor com YARA -->
+<button id="yaraBtn" class="yara-btn" aria-label="Conversar com a assistente Yara">
+<div class="yara-badge" aria-hidden="true">Y</div>
+<div class="yara-text">Conversar com Yara</div>
+</button>
 
-<!-- Container fixo para Yara (Watson) no canto inferior direito -->
-<div id="yara-container" style="position:fixed;right:18px;bottom:18px;z-index:9999;display:none;"></div>
+<!-- Container onde Yara (Watson) será renderizada -->
+<div id="yara-container" aria-hidden="true"></div>
 
-<!-- Watson Assistant embed customizado para Yara -->
 <script>
-// botão para abrir modal
-document.getElementById('openChat').addEventListener('click', function(e){
-e.preventDefault();
-document.getElementById('modal-yara').style.display = 'flex';
-});
-document.getElementById('cancel-yara').addEventListener('click', function(){ document.getElementById('modal-yara').style.display = 'none'; });
+// Evento do botão YARA
+const yaraBtn = document.getElementById('yaraBtn');
+const yaraContainer = document.getElementById('yara-container');
+yaraBtn.addEventListener('click', function(){
+// mostra container e esconde botão
+yaraContainer.style.display = 'block';
+yaraContainer.setAttribute('aria-hidden','false');
+yaraBtn.style.display = 'none';
 
-document.getElementById('confirm-yara').addEventListener('click', function(){
-document.getElementById('modal-yara').style.display = 'none';
-// mostra o container onde a Yara será renderizada
-document.getElementById('yara-container').style.display = 'block';
-// se preferir abrir a widget e não renderizar no container, poderá remover a opção container render
+if(window._yaraLoaded) return;
+window._yaraLoaded = true;
+
 window.watsonAssistantChatOptions = {
-integrationID: "6f4c306d-a746-496f-b2c1-0ecf69b69af3", // seu integrationID (já fornecido)
+integrationID: "6f4c306d-a746-496f-b2c1-0ecf69b69af3",
 region: "us-south",
 serviceInstanceID: "99b8a9c7-7e40-4178-965d-4b0ded28035a",
 onLoad: async (instance) => {
 try{
-// tenta renderizar dentro do container (se suportado pela versão)
 await instance.render({ container: document.getElementById('yara-container') });
 }catch(e){
-// fallback: renderiza no padrão e força posicionamento
 await instance.render();
 setTimeout(()=> {
 const el = document.querySelector('.webchat-app, #watsonAssistantChat');
@@ -215,7 +173,12 @@ t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/latest/
 document.head.appendChild(t);
 })();
 });
+
+// abrir pela CTA principal também
+document.getElementById('openChat').addEventListener('click', function(e){
+e.preventDefault();
+yaraBtn.click();
+});
 </script>
 </body>
 </html>
-
