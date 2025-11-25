@@ -6,234 +6,136 @@
 <title>Maycon Barboza — Psicólogo, Psicanalista & Educador</title>
 <meta name="description" content="Maycon Barboza - atendimento clínico desde 2016. Formação em psicanálise clínica, supervisão, hipnoterapia e cursos.">
 <style>
-:root{--accent:#6b4e44;--muted:#6b6b6b;--bg:#fbf9f7;--card:#ffffff}
+:root{
+--primary: #2A6F97; /* azul profissional */
+--muted:#6b6b6b;
+--bg:#fbfafa;
+--card:#ffffff;
+--heading-font: "Georgia", serif;
+--body-font: Georgia, serif;
+}
 *{box-sizing:border-box}
-body{font-family:Georgia, 'Times New Roman', serif;margin:0;background:var(--bg);color:#222;-webkit-font-smoothing:antialiased}
-.wrap{max-width:1100px;margin:28px auto;padding:18px}
-.card{background:var(--card);border-radius:12px;padding:28px;box-shadow:0 8px 30px rgba(0,0,0,0.06)}
-.hero{display:flex;gap:24px;align-items:center}
+body{font-family:var(--body-font);margin:0;background:var(--bg);color:#223;line-height:1.5}
+.wrap{max-width:1100px;margin:32px auto;padding:18px}
+.card{background:var(--card);border-radius:12px;padding:28px;box-shadow:0 10px 30px rgba(0,0,0,0.06)}
+.hero{display:flex;gap:28px;align-items:center}
 .hero-left{flex:1}
-.profile-photo{width:180px;height:180px;border-radius:12px;object-fit:cover;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
-h1{margin:0 0 6px;font-size:30px}
-p.lead{margin:0 0 12px;color:var(--muted);font-size:16px;line-height:1.4}
-.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-.badge{background:linear-gradient(180deg,#fff,#f6f1ed);padding:8px 12px;border-radius:999px;border:1px solid rgba(0,0,0,0.04);font-size:14px;color:var(--accent)}
-.cta-row{margin-top:18px;display:flex;gap:12px}
-.btn{background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;border:none;cursor:pointer;font-weight:600}
-.btn.secondary{background:transparent;color:var(--accent);border:1px solid rgba(0,0,0,0.06)}
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
-.gallery img{width:100%;height:160px;object-fit:cover;border-radius:10px}
-.section{margin-top:22px}
-h3{margin:0 0 8px;font-size:20px}
-.muted{color:var(--muted);line-height:1.5}
-.two-col{display:flex;gap:22px}
+.profile-photo{width:240px;height:240px;border-radius:12px;object-fit:cover;box-shadow:0 8px 22px rgba(0,0,0,0.08)}
+h1{margin:0 0 6px;font-size:30px;font-family:var(--heading-font);color:var(--primary);font-weight:600}
+.subtitle{margin:0 0 12px;color:var(--muted);font-size:16px}
+.chip{display:inline-block;padding:8px 12px;border-radius:999px;background:#f2f7fb;color:var(--primary);border:1px solid rgba(42,111,151,0.08);font-weight:600;margin-right:8px}
+.section{margin-top:24px}
+h3{margin:0 0 8px;font-size:20px;color:var(--primary);font-family:var(--heading-font);font-weight:600}
+.muted{color:var(--muted)}
+.two-col{display:flex;gap:22px;align-items:flex-start}
 .col{flex:1}
-.ebook{display:flex;gap:18px;align-items:flex-start}
-.ebook object{width:360px;height:220px;border-radius:8px;border:1px solid rgba(0,0,0,0.06)}
-footer{margin-top:26px;text-align:center;color:var(--muted);font-size:13px;padding:18px}
-.contact-line{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px}
-.chip{background:#f1eee9;padding:8px 12px;border-radius:999px;font-size:14px;color:var(--muted)}
-/* small privacy modal link style */
-.privacy-link{color:var(--muted);text-decoration:underline;cursor:pointer}
-/* Responsive */
-@media (max-width:860px){.hero{flex-direction:column;align-items:flex-start}.gallery{grid-template-columns:repeat(2,1fr)}.ebook{flex-direction:column}.profile-photo{width:140px;height:140px}}
+.ebook object{width:100%;height:420px;border-radius:8px;border:1px solid rgba(0,0,0,0.06)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+.gallery img{width:100%;height:160px;object-fit:cover;border-radius:10px}
+footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px;padding:18px}
+@media (max-width:900px){
+.hero{flex-direction:column;align-items:flex-start}
+.profile-photo{width:160px;height:160px}
+.gallery{grid-template-columns:repeat(2,1fr)}
+}
 </style>
 </head>
 <body>
 <div class="wrap">
 <div class="card" role="main">
-<!-- HERO -->
-<div class="hero" aria-label="Apresentação do profissional">
+<!-- HERO (foto de capa + texto) -->
+<div class="hero" aria-label="Apresentação">
 <div class="hero-left">
-<h1>Maycon Barboza — Psicólogo, Psicanalista & Educador Clínico</h1>
-<p class="lead">Atendimento clínico desde 2016. Mais de 14.000 atendimentos. Formador de novos profissionais em psicanálise clínica, com prática integrativa e foco em vínculos, transtornos de humor e sexualidade.</p>
+<h1>Maycon Barboza</h1>
+<p class="subtitle">Psicólogo, Psicanalista e Educador Clínico — atendimento desde 2016. Abordagem integrativa com foco em vínculos, transtornos de humor e sexualidade.</p>
 
-<div class="badges" aria-hidden="true">
-<div class="badge">Psicanálise Clínica</div>
-<div class="badge">Hipnoterapia</div>
-<div class="badge">Supervisão Clínica</div>
-</div>
-
-<div class="cta-row">
-<a class="btn" href="#contato">Agendar / Contato</a>
-<a class="btn secondary" href="#ebook">Baixar e-book</a>
-</div>
-
-<div class="contact-line">
-<div class="chip">CRP 01/21617</div>
-<div style="color:var(--muted);font-size:14px">Atendimento presencial e online · Mais de 14.000 atendimentos</div>
+<div style="margin-top:8px">
+<span class="chip">CRP 01/21617</span>
+<span style="color:var(--muted);margin-left:8px">Atendimento presencial e online · +14.000 atendimentos</span>
 </div>
 </div>
 
-<!-- FOTO DE CAPA (arquivo enviado) -->
+<!-- FOTO DE CAPA (use exato: images/maycon-1.jpg) -->
 <div>
-<img class="profile-photo" alt="Maycon Barboza" src="/mnt/data/FAE074C2-FA83-4DA6-847F-32BB45495631.jpeg">
+<img class="profile-photo" alt="Maycon — foto de capa" src="images/maycon-1.jpg">
 </div>
 </div>
 
-<!-- QUEM É -->
+<!-- Quem é (tom humano) -->
 <div class="section" id="quem-e">
-<h3>Quem é Maycon?</h3>
-<div class="muted">
-<p><strong>Brasiliense. Pai. Estudioso.</strong> Maycon trabalha com escuta clínica e formação com a mesma postura: rigor teórico e calor humano. Convive com transtorno bipolar tipo II e traz dessa experiência pessoal um compromisso ético com a compreensão do sofrimento emocional.</p>
-
-<p>Formado em Psicologia (IESB), com especializações em Psicanálise Clínica, Sexualidade Humana, Psicologia Fenomenológica e Hipnoterapia, sua prática clínica integra teoria e experiência, oferecendo um espaço seguro para a investigação dos vínculos, do desejo e do sofrimento.</p>
-</div>
+<h3>Quem é Maycon</h3>
+<p class="muted"><strong>Brasiliense. Pai. Estudioso.</strong> Maycon integra rigor teórico e sensibilidade clínica. Convive com transtorno bipolar tipo II e usa essa experiência para ampliar a compreensão do sofrimento emocional.</p>
 </div>
 
-<!-- AUTORIDADE CLÍNICA -->
-<div class="section" id="autoridade">
-<h3>Formação e atuação</h3>
-<div class="two-col" style="gap:18px;align-items:flex-start">
+<!-- PRÁTICA clínica com foto lateral (use images/maycon-2.jpg) -->
+<div class="section two-col" style="align-items:flex-start">
 <div class="col">
-<ul class="muted">
-<li><strong>Psicologia — IESB</strong></li>
-<li>Psicanálise Clínica — FBMG (formação livre)</li>
-<li>Sexualidade Humana — Child Behavior Institute (Miami)</li>
-<li>Psicologia Fenomenológica e Existencial — FAVENI</li>
-<li>Hipnoterapia — Instituto Versate</li>
-<li>Especialista em Transtornos de Humor e Transtorno Bipolar</li>
-</ul>
-</div>
-<div class="col">
-<p class="muted">Atua como psicoterapeuta, psicanalista, sexólogo e hipnoterapeuta. Oferece terapia individual, supervisão clínica, palestras e cursos de formação. Traz experiência técnica e sensibilidade humana para trabalhar com temas complexos como vínculos, humor e sexualidade.</p>
-</div>
-</div>
-</div>
-
-<!-- O QUE TRATA -->
-<div class="section" id="pratica">
-<h3>Prática clínica — Como trabalha</h3>
-<p class="muted">Escuta psicanalítica atenta às singularidades de cada pessoa. Utiliza a psicanálise como eixo — com possibilidade de técnicas complementares (hipnoterapia) quando indicadas — e prioriza segurança, confidencialidade e supervisão contínua.</p>
+<h3>Como trabalha</h3>
+<p class="muted">Escuta psicanalítica que prioriza singularidade e ética. Intervenções integrativas quando indicadas (hipnoterapia). Trabalho com vínculos, humor, sexualidade e supervisão clínica.</p>
 <ul class="muted">
 <li>Vínculos e relacionamentos</li>
 <li>Transtornos de humor (incluindo transtorno bipolar)</li>
 <li>Questões de sexualidade</li>
-<li>Processos de luto, angústia e crises existenciais</li>
+<li>Supervisão e formação</li>
 </ul>
 </div>
 
-<!-- FORMAÇÃO (CURSO) -->
+<div style="width:320px">
+<img alt="Maycon — prática clínica" style="width:100%;height:240px;object-fit:cover;border-radius:10px" src="images/maycon-2.jpg">
+</div>
+</div>
+
+<!-- FORMAÇÃO / CURSO -->
 <div class="section" id="formacao">
 <h3>Formação Livre em Psicanálise Clínica — Instituto LivreMent</h3>
-<p class="muted"><strong>Duração:</strong> 39 meses (3 anos). <strong>Modalidade:</strong> presencial e online. <strong>Tripé:</strong> análise pessoal, supervisão clínica e estudo teórico.</p>
-
-<div class="muted">
-<h4 style="margin-top:12px">Para quem é</h4>
-<p>Indicado para quem deseja aprofundar conhecimentos em psicanálise — seja para atuação clínica, pesquisa ou aprimoramento profissional.</p>
-
-<h4 style="margin-top:12px">Objetivos</h4>
-<ul>
-<li>Compreender dinâmicas emocionais e afetivas.</li>
-<li>Desenvolver habilidades analíticas e reflexivas.</li>
-<li>Entender a influência dos processos inconscientes.</li>
-<li>Aprofundar práticas terapêuticas e contribuir para o avanço teórico.</li>
-</ul>
-
-<h4 style="margin-top:12px">Tripé da formação</h4>
-<ul>
-<li><strong>Análise pessoal:</strong> prática de autoconhecimento contínua e necessária à escuta clínica.</li>
-<li><strong>Supervisão:</strong> acompanhamento por analista experiente para desenvolvimento técnico.</li>
-<li><strong>Estudo teórico:</strong> leitura e discussão de textos clássicos e contemporâneos.</li>
-</ul>
+<p class="muted"><strong>Duração:</strong> 39 meses. Tripé formativo: análise pessoal, supervisão e estudo teórico. Metodologia interativa; turmas reduzidas; material incluso.</p>
 </div>
 
-<div style="margin-top:12px" class="muted">
-<h4>Cronograma resumido (sujeito a alterações)</h4>
-<ul>
-<li><strong>Ano 1 — Fundamentos:</strong> Introdução, desenvolvimento psicossexual, mecanismos de defesa, clínica inicial (módulos de 3 meses).</li>
-<li><strong>Ano 2 — Autores e aplicação:</strong> Lacan, Klein e estudo de casos clínicos.</li>
-<li><strong>Ano 3 — Prática:</strong> prática clínica avançada, ética e trabalho de conclusão.</li>
-</ul>
-</div>
-</div>
-
-<!-- INVESTIMENTO -->
-<div class="section" id="valores">
-<h3>Investimento & Modalidades</h3>
-<div class="muted">
-<p><strong>Formação em Grupo:</strong> R$ 250/mês (R$ 200 com desconto de pontualidade).</p>
-<p><strong>Formação Individual:</strong> R$ 400/mês (R$ 350 com desconto de pontualidade).</p>
-<p>Incluso: material didático digital, possibilidade de clinicar sob supervisão por 6 meses, aulas semanais (3h).</p>
-</div>
-</div>
-
-<!-- E-BOOK -->
+<!-- E-BOOK (botão discreto dentro da seção) -->
 <div id="ebook" class="section">
 <h3>E-book da Formação</h3>
+<div class="muted" style="margin-bottom:12px">Material resumido com objetivos, cronograma e metodologia. Baixe para consultar detalhes da formação.</div>
 <div class="ebook">
-<!-- Embed do PDF: apontando para pdf/ebook.pdf (quando subir ao repositório, coloque o arquivo em /pdf/ebook.pdf) -->
-<object data="pdf/ebook.pdf" type="application/pdf">
-<p class="muted">Visualização não suportada. <a href="pdf/ebook.pdf" download>Baixe o e-book (PDF)</a></p>
+<object id="ebookObject" data="pdf/ebook.pdf" type="application/pdf">
+<p class="muted">Se o PDF não abrir, <a id="ebookLink" href="pdf/ebook.pdf" download>clique aqui para baixar o e-book</a>.</p>
 </object>
-
-<div style="flex:1">
-<p class="muted">Material resumido da formação em psicanálise clínica. Contém objetivo, metodologia, cronograma e informações práticas. Caso não abra, clique para baixar.</p>
-<a class="btn" href="pdf/ebook.pdf" download>Baixar E-book (PDF)</a>
 </div>
-</div>
+<div style="margin-top:12px"><a class="btn" href="pdf/ebook.pdf" download>Baixar E-book (PDF)</a></div>
 </div>
 
-<!-- GALERIA DE FOTOS -->
+<!-- GALERIA (inclui a terceira foto: images/maycon-3.jpg) -->
 <div class="section" id="galeria">
 <h3>Imagens</h3>
-<div class="gallery" aria-label="Galeria de fotos">
-<!-- As fotos que você enviou (usa caminhos locais enviados no chat) -->
-<img alt="Maycon 1" src="/mnt/data/FAE074C2-FA83-4DA6-847F-32BB45495631.jpeg">
-<img alt="Maycon 2" src="/mnt/data/EB8BEE95-2113-4781-8A20-A893C88EFD3B.jpeg">
-<img alt="Maycon 3" src="/mnt/data/7D8D8CC6-7514-42AB-A9D0-69FEB373E401.jpeg">
+<div class="gallery" aria-label="Galeria">
+<img alt="Maycon - imagem 1" src="images/maycon-1.jpg">
+<img alt="Maycon - imagem 2" src="images/maycon-2.jpg">
+<img alt="Maycon - imagem 3" src="images/maycon-3.jpg">
 </div>
 </div>
 
-<!-- AVISO E RODAPÉ INTERNO -->
 <div class="section" style="font-size:13px;color:var(--muted)">
-<strong>Aviso:</strong> Conteúdo informativo. Yara é assistente de apoio — não substitui avaliação clínica. Em caso de risco, contate serviços de emergência locais.
+<strong>Aviso:</strong> Conteúdo informativo. Yara é assistente de apoio — não substitui avaliação clínica. Em caso de risco, contate serviços de emergência.
 </div>
 </div>
 
-<!-- RODAPÉ -->
 <footer>
-<div style="margin-bottom:8px">
-<span class="privacy-link" onclick="document.getElementById('privacidade').scrollIntoView({behavior:'smooth'})">Política de privacidade</span> · <a href="#contato" style="color:var(--muted);text-decoration:underline">Contato</a>
+<div style="margin-top:18px;color:var(--muted);text-align:center">
+<a href="#privacidade" style="color:var(--muted);text-decoration:underline">Política de privacidade</a> · Instagram: @terapeutamaycon
 </div>
-<div style="color:var(--muted)">Curadoria e linguagem por Maycon Barboza · Instagram: @terapeutamaycon</div>
+<div style="color:var(--muted);margin-top:8px;text-align:center">Curadoria e linguagem por Maycon Barboza</div>
 </footer>
+
+<!-- Política embutida -->
+<div id="privacidade" style="max-width:1100px;margin:36px auto;padding:18px;">
+<div style="background:#fff;border-radius:12px;padding:22px;box-shadow:0 8px 30px rgba(0,0,0,0.06);line-height:1.6">
+<h3 style="color:var(--primary)">Política de Privacidade</h3>
+<p class="muted">Este site respeita a privacidade dos usuários. Os dados coletados são usados apenas para contato e agendamento quando necessário. A Yara, assistente da IBM Watson, obedece às políticas de privacidade da IBM.</p>
+<p style="color:var(--muted)">Última atualização: 2025</p>
 </div>
-
-<!-- POLÍTICA DE PRIVACIDADE (SECTION EMBUTIDA) -->
-<div id="privacidade" style="max-width:1100px;margin:40px auto;padding:18px;">
-<div style="background:#fff;border-radius:12px;padding:22px;box-shadow:0 8px 30px rgba(0,0,0,0.06);line-height:1.6;font-family:Georgia,serif;">
-<h2>Política de Privacidade</h2>
-<p>Este site tem o compromisso com a privacidade e segurança das informações fornecidas pelos usuários. Os dados coletados são utilizados exclusivamente para fins de contato, prestação de serviços ou acompanhamento de solicitações.</p>
-
-<h3>Coleta de Dados</h3>
-<p>Podem ser coletadas informações como nome, telefone, e-mail ou outros dados fornecidos voluntariamente pelo usuário ao entrar em contato ou solicitar atendimento.</p>
-
-<h3>Uso das Informações</h3>
-<p>As informações são utilizadas para:</p>
-<ul>
-<li>Agendamento de atendimentos clínicos;</li>
-<li>Contato sobre a Formação em Psicanálise Clínica;</li>
-<li>Envio de informações solicitadas pelo próprio usuário.</li>
-</ul>
-
-<h3>Compartilhamento de Informações</h3>
-<p>Os dados não são vendidos, repassados ou compartilhados com terceiros, exceto quando exigido por lei.</p>
-
-<h3>Cookies</h3>
-<p>Este site pode utilizar cookies apenas para fins de funcionamento técnico. Não coletamos dados sensíveis ou comportamentais.</p>
-
-<h3>Assistente Virtual (Yara)</h3>
-<p>A Yara, assistente fornecida pela IBM Watson, opera conforme as diretrizes de privacidade da IBM. Ao utilizar o chat, o usuário concorda com a política de privacidade da plataforma de terceiros.</p>
-
-<h3>Contato</h3>
-<p>Em caso de dúvidas, entre em contato pelo WhatsApp ou e-mail informados no site.</p>
-
-<p style="margin-top:18px;color:var(--muted)">Última atualização: 2025</p>
 </div>
 </div>
 
-<!-- SNIPPET DA YARA (Watson Assistant) - integra e autoabre -->
+<!-- Watson Assistant (Yara) -->
 <script>
 window.watsonAssistantChatOptions = {
 integrationID: "6f4c306d-a746-496f-b2c1-0ecf69b69af3",
@@ -241,32 +143,32 @@ region: "us-south",
 serviceInstanceID: "99b8a9c7-7e40-4178-965d-4b0ded28035a",
 onLoad: async (instance) => {
 await instance.render();
-setTimeout(() => {
-try { instance.openWindow(); } catch(e) { /* fallback silencioso */ }
-}, 2000);
+setTimeout(()=>{ try{ instance.openWindow(); }catch(e){} },2000);
 }
 };
 setTimeout(function(){
 const t=document.createElement('script');
-t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/"
-+ (window.watsonAssistantChatOptions.clientVersion || 'latest')
-+ "/WatsonAssistantChatEntry.js";
+t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
 document.head.appendChild(t);
 });
 </script>
 
-<!-- NOTAS RÁPIDAS:
-- Este arquivo já referencia as imagens que você enviou (caminhos locais /mnt/data/...).
-- Quando for publicar no GitHub Pages, crie /images/ e /pdf/ e substitua srcs por:
-images/maycon-1.jpg images/maycon-2.jpg images/maycon-3.jpg
-e coloque o ebook em: pdf/ebook.pdf
-- Salve este conteúdo como index.html antes de subir.
--->
-
+<!-- Checagem simples do PDF: se existir, usa embed; se não, o link de download funciona -->
+<script>
+(async function(){
+const pdfPath = 'pdf/ebook.pdf';
+try {
+const res = await fetch(pdfPath, {method:'HEAD'});
+if(res.ok){
+const obj = document.getElementById('ebookObject');
+if(obj) obj.data = pdfPath;
+const link = document.getElementById('ebookLink');
+if(link) link.href = pdfPath;
+}
+} catch(e){ console.warn('PDF não verificado (pode ser local):', e); }
+})();
+</script>
 </body>
 </html>
-
-
-
 
 
