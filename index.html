@@ -168,7 +168,7 @@ Curadoria e linguagem por Maycon Barboza — Conteúdo informativo.
 </div>
 </div>
 
-<!-- Container fixo para Iara (Watson) no canto inferior direito -->
+<!-- Container fixo para Yara (Watson) no canto inferior direito -->
 <div id="yara-container" style="position:fixed;right:18px;bottom:18px;z-index:9999;display:none;"></div>
 
 <!-- Watson Assistant embed customizado para Yara -->
@@ -176,14 +176,14 @@ Curadoria e linguagem por Maycon Barboza — Conteúdo informativo.
 // botão para abrir modal
 document.getElementById('openChat').addEventListener('click', function(e){
 e.preventDefault();
-document.getElementById('modal-iara').style.display = 'flex';
+document.getElementById('modal-yara').style.display = 'flex';
 });
 document.getElementById('cancel-yara').addEventListener('click', function(){ document.getElementById('modal-yara').style.display = 'none'; });
 
 document.getElementById('confirm-yara').addEventListener('click', function(){
 document.getElementById('modal-yara').style.display = 'none';
-// mostra o container onde a Iara será renderizada
-document.getElementById('iara-container').style.display = 'block';
+// mostra o container onde a Yara será renderizada
+document.getElementById('yara-container').style.display = 'block';
 // se preferir abrir a widget e não renderizar no container, poderá remover a opção container render
 window.watsonAssistantChatOptions = {
 integrationID: "6f4c306d-a746-496f-b2c1-0ecf69b69af3", // seu integrationID (já fornecido)
@@ -192,7 +192,7 @@ serviceInstanceID: "99b8a9c7-7e40-4178-965d-4b0ded28035a",
 onLoad: async (instance) => {
 try{
 // tenta renderizar dentro do container (se suportado pela versão)
-await instance.render({ container: document.getElementById('iara-container') });
+await instance.render({ container: document.getElementById('yara-container') });
 }catch(e){
 // fallback: renderiza no padrão e força posicionamento
 await instance.render();
@@ -218,3 +218,4 @@ document.head.appendChild(t);
 </script>
 </body>
 </html>
+
